@@ -1,0 +1,7 @@
+= alpakka
+
+Playing with Alpakka
+
+Consists of projects:
+
+ - csv - see link:csv/README.ADOC[README]
