@@ -1,2 +1,2 @@
-# aplpakka
+# alpakka
 Playing with Alpakka
