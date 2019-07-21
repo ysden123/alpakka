@@ -87,6 +87,7 @@ object CsvParsingEx01 extends App with LazyLogging {
           (for (
             record <- records
           ) yield record).foreach(record => logger.info("{}", record))
+        case _ =>
       }
 
       countDownLatch.countDown()
