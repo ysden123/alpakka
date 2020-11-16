@@ -1,0 +1,6 @@
+= jdbc-slick
+
+Akka, alpakka, JDBC, Slick.
+
+== Config location:
+VM options: -Dconfig.file=c:\BitBucket\ys_poc\config\application.conf

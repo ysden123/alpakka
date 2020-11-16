@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2020. StulSoft
+  -->
+
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="Console">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger(%line) - %msg%n"/>
+        </Console>
+        <File name="File" fileName="logs/jdbc-slick.log" append="true">
+            <PatternLayout pattern="%d{DEFAULT} [%t] %-5level %logger(%line) - %msg%n"/>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Root level="debug">
+            <AppenderRef ref="Console" level="debug"/>
+            <AppenderRef ref="File"/>
+        </Root>
+        <Logger name="com.zaxxer" level="error"/>
+        <Logger name="slick.basic" level="error"/>
+        <Logger name="slick.jdbc" level="error"/>
+        <Logger name="slick.compiler" level="error"/>
+        <Logger name="slick.relational" level="error"/>
+    </Loggers>
+</Configuration>
